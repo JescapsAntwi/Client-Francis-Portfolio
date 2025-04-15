@@ -16,8 +16,8 @@ import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
 const SOCIAL_LINKS = {
-  linkedin: "https://www.linkedin.com/in/francis-acquah/", // Replace with your actual LinkedIn URL
-  instagram: "https://www.instagram.com/francis.acquah/", // Replace with your actual Instagram URL
+  linkedin: "www.linkedin.com/in/francisacquahappoh", // Replace with your actual LinkedIn URL
+  instagram: "https://www.instagram.com/kofijhay1/", // Replace with your actual Instagram URL
 };
 
 const Contact = () => {
