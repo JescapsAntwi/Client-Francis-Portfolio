@@ -3,8 +3,8 @@ import { ChevronRight, Linkedin, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button"; // Updated import path
 
 const SOCIAL_LINKS = {
-  linkedin: "https://www.linkedin.com/in/francis-acquah/",
-  instagram: "https://www.instagram.com/francis.acquah/",
+  linkedin: "www.linkedin.com/in/francisacquahappoh",
+  instagram: "https://www.instagram.com/kofijhay1/",
 };
 
 const Footer = () => {
