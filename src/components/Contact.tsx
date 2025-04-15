@@ -15,6 +15,11 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
+const SOCIAL_LINKS = {
+  linkedin: "https://www.linkedin.com/in/francis-acquah/", // Replace with your actual LinkedIn URL
+  instagram: "https://www.instagram.com/francis.acquah/", // Replace with your actual Instagram URL
+};
+
 const Contact = () => {
   const { toast } = useToast();
   const [name, setName] = useState("");
@@ -127,6 +132,7 @@ const Contact = () => {
                   variant="outline"
                   className="rounded-full"
                   aria-label="LinkedIn"
+                  onClick={() => window.open(SOCIAL_LINKS.linkedin, "_blank")}
                 >
                   <Linkedin className="h-5 w-5 text-navy" />
                 </Button>
@@ -135,16 +141,9 @@ const Contact = () => {
                   variant="outline"
                   className="rounded-full"
                   aria-label="Instagram"
+                  onClick={() => window.open(SOCIAL_LINKS.instagram, "_blank")}
                 >
                   <Instagram className="h-5 w-5 text-navy" />
-                </Button>
-                <Button
-                  size="icon"
-                  variant="outline"
-                  className="rounded-full"
-                  aria-label="GitHub"
-                >
-                  <Github className="h-5 w-5 text-navy" />
                 </Button>
               </div>
             </div>
